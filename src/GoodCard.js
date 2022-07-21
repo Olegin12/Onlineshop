@@ -21,9 +21,11 @@ function GoodCard() {
         );
     }
     return (
-        <CardGroup class='container row'>
-                {cards}
-        </CardGroup>
+        <Row>
+            <CardGroup class='container row'>
+                    {cards}
+            </CardGroup>
+        </Row>
     )
 }
 
