@@ -1,8 +1,12 @@
 import Button from '../node_modules/react-bootstrap/esm/Button';
 import Card from '../node_modules/react-bootstrap/esm/Card';
-import {CardGroup} from "react-bootstrap";
+import CardGroup from '../node_modules/react-bootstrap/esm/CardGroup';
+import MyModal from "./MyModal";
+import React from 'react';
+
 
 function GoodCard() {
+    const [modalShow, setModalShow] = React.useState(false);
     let cards = [];
     for (let i = 1; i <= 6; i++) {
         cards.push(
@@ -14,18 +18,23 @@ function GoodCard() {
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="primary" onClick={() => setModalShow(true)}>Go somewhere</Button>
+
+                        <MyModal
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                        />
                     </Card.Body>
                     <br/>
                 </Card>
         );
     }
     return (
-        <Row>
+        //<Row>
             <CardGroup class='container row'>
                     {cards}
             </CardGroup>
-        </Row>
+        //</Row>
     )
 }
 
