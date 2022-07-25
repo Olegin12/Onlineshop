@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import Hello from './HelloBtn';
 import CarouselImg from './Carousel';
 import GoodCard from './GoodCard';
+import Footer from "./Footer";
 
 import './App.css';
 
@@ -21,6 +22,7 @@ const App = () => (
       </Container>
         <CarouselImg>Hi</CarouselImg>
         <GoodCard>Goods</GoodCard>
+        <Footer>Footer</Footer>
     </Container>
 );
 

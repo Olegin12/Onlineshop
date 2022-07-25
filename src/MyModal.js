@@ -15,7 +15,7 @@ function MyModal(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <img src="https://via.placeholder.com/300px250"  alt={'product'} style={{ borderRadius: '5px', }}/>
+                <img src="https://via.placeholder.com/300px250"  alt={'product'} style={{ borderRadius: '5px' }}/>
                 <h4>Product name</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt explicabo fugit impedit veniam. Blanditiis consequatur deleniti, fugiat illum incidunt ipsa laborum libero nam omnis placeat provident quibusdam ratione voluptates.
