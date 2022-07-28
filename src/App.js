@@ -22,7 +22,7 @@ const App = () => (
       </Container>
         <CarouselImg>Hi</CarouselImg>
         <GoodCard>Goods</GoodCard>
-        <Footer>Footer</Footer>
+        <Footer>Footer </Footer>
     </Container>
 );
 
