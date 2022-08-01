@@ -1,5 +1,5 @@
-import Modal from "../node_modules/react-bootstrap/esm/Modal";
-import Button from "../node_modules/react-bootstrap/esm/Button";
+import Modal from "react-bootstrap/cjs/Modal";
+import Button from "react-bootstrap/cjs/Button";
 
 function MyModal(props) {
     return (

@@ -1,29 +1,31 @@
 import Container from '../node_modules/react-bootstrap/esm/Container';
-import NavBar from './NavBar';
-import Hello from './HelloBtn';
-import CarouselImg from './Carousel';
-import GoodCard from './GoodCard';
-import Footer from "./Footer";
+import NavBar from './Components/NavBar';
 
 import './App.css';
+import Footer from "./Components/Footer";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Home from "./Pages/Home";
+import LoginForm from "./Pages/LoginForm";
+import React from "react";
+import Catalogue from "./Pages/Catalogue";
 
-const App = () => (
-    <Container className="p-3">
-      <Container className="p-5 mb-4 bg-light rounded-3">
-          <NavBar> </NavBar>
-        <h1 className="header">Welcome To the OnlineShop</h1>
-        <Hello>
-          You are welcome!
-          <span role="img" aria-label="tada">
-          🎉
-        </span>
+function App() {
+    return (
+        <Container className="p-5 mb-4 bg-light rounded-3">
+            <NavBar> </NavBar>
 
-        </Hello>
-      </Container>
-        <CarouselImg>Hi</CarouselImg>
-        <GoodCard>Goods</GoodCard>
-        <Footer>Footer </Footer>
-    </Container>
-);
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route exact path="/LoginForm" element={<LoginForm />} />
+                    <Route exact path="/Catalogue" element={<Catalogue />} />
+                </Routes>
+            </Router>
+
+            <Footer> </Footer>
+
+        </Container>
+    );
+}
 
 export default App;

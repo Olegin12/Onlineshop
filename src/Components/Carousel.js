@@ -1,4 +1,4 @@
-import Carousel from '../node_modules/react-bootstrap/esm/Carousel';
+import Carousel from 'react-bootstrap/cjs/Carousel';
 
 function CarouselImg() {
     return (

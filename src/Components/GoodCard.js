@@ -1,6 +1,6 @@
-import Button from '../node_modules/react-bootstrap/esm/Button';
-import Card from '../node_modules/react-bootstrap/esm/Card';
-import CardGroup from '../node_modules/react-bootstrap/esm/CardGroup';
+import Button from 'react-bootstrap/cjs/Button';
+import Card from 'react-bootstrap/cjs/Card';
+import CardGroup from 'react-bootstrap/cjs/CardGroup';
 import MyModal from "./MyModal";
 import React from 'react';
 
@@ -30,11 +30,9 @@ function GoodCard() {
         );
     }
     return (
-        //<Row>
             <CardGroup class='container row'>
                     {cards}
             </CardGroup>
-        //</Row>
     )
 }
 

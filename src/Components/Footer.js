@@ -13,10 +13,10 @@ const Footer = () => <footer className="page-footer font-small blue pt-4">
             <div className="col-md-3 mb-md-0 mb-3">
                 <h5 className="text-uppercase">Links</h5>
                 <ul className="list-unstyled">
-                    <li><a href="#link">Link 1</a></li>
-                    <li><a href="#link">Link 2</a></li>
-                    <li><a href="#link">Link 3</a></li>
-                    <li><a href="#link">Link 4</a></li>
+                    <li><a href="#link1">Link 1</a></li>
+                    <li><a href="#link2">Link 2</a></li>
+                    <li><a href="#link3">Link 3</a></li>
+                    <li><a href="#link4">Link 4</a></li>
                 </ul>
             </div>
 
@@ -32,8 +32,8 @@ const Footer = () => <footer className="page-footer font-small blue pt-4">
         </div>
     </div>
 
-    <div className="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    <div className="footer-copyright text-center py-3">© 2022 Copyright:
+        <a href="#Oleg">Oleg</a>
     </div>
 
 </footer>

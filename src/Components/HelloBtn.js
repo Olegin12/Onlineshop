@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Toast from '../node_modules/react-bootstrap/esm/Toast';
-import Button from '../node_modules/react-bootstrap/esm/Button';
+import Toast from 'react-bootstrap/cjs/Toast';
+import Button from 'react-bootstrap/cjs/Button';
 
 const Hello = ({ children }) => {
     const [show, toggleShow] = useState(false);
