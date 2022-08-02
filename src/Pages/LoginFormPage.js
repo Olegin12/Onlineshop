@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Button from 'react-bootstrap/cjs/Button';
 import Form from 'react-bootstrap/cjs/Form';
+import RegistrationPage from "./RegistrationPage";
 
-class LoginForm extends Component {
+class LoginFormPage extends Component {
         render() {
             return (
             <Form>
@@ -21,10 +22,13 @@ class LoginForm extends Component {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
+                <Button variant="primary" type="button" onClick={RegistrationPage}>
+                    Register
+                </Button>
             </Form>
             );
         };
 }
 
-export default LoginForm;
+export default LoginFormPage;
 

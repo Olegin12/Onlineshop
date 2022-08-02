@@ -14,7 +14,7 @@ function UncontrolledExample() {
                 <GoodCard> A</GoodCard>
             </Tab>
             <Tab eventKey="home" title="Man">
-                <p>And here is anther kind</p>
+                <p>And here is another kind</p>
                 <GoodCard> A</GoodCard>
             </Tab>
         </Tabs>

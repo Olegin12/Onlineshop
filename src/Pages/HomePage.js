@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/cjs/Container';
 import Hello from '../Components/HelloBtn';
 import Carousel from "../Components/Carousel";
 
-class Home extends Component {
+class HomePage extends Component {
     render() {
         return (
             <Container className="p-3">
@@ -23,4 +23,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default HomePage;

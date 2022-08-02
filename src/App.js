@@ -4,10 +4,10 @@ import NavBar from './Components/NavBar';
 import './App.css';
 import Footer from "./Components/Footer";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Home from "./Pages/Home";
-import LoginForm from "./Pages/LoginForm";
+import HomePage from "./Pages/HomePage";
+import LoginFormPage from "./Pages/LoginFormPage";
 import React from "react";
-import Catalogue from "./Pages/Catalogue";
+import CataloguePage from "./Pages/CataloguePage";
 
 function App() {
     return (
@@ -16,9 +16,9 @@ function App() {
 
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route exact path="/LoginForm" element={<LoginForm />} />
-                    <Route exact path="/Catalogue" element={<Catalogue />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route exact path="/LoginFormPage" element={<LoginFormPage />} />
+                    <Route exact path="/CataloguePage" element={<CataloguePage />} />
                 </Routes>
             </Router>
 
