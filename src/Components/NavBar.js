@@ -17,6 +17,7 @@ function NavBar() {
                         <Nav.Link href="/LoginFormPage">My profile</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
+                <Nav.Link href="/ShoppingCart">Shopping Cart</Nav.Link>
             </Container>
         </Navbar>
     );

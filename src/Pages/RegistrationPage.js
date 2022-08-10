@@ -1,14 +1,13 @@
 import React from 'react';
-import {Form} from "react-bootstrap";
+import Register from "../Components/Register";
 
 function RegistrationPage() {
-        return (
-            <Form>
-                <Form.Group class="">
-
-                </Form.Group>
-            </Form>
+        return(
+            <div>
+                    <h1>Welcome to registration page!</h1>
+            </div>
         );
+        Register();
 }
 
 export default RegistrationPage;

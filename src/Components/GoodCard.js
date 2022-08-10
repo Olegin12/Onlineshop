@@ -12,19 +12,18 @@ function GoodCard() {
         cards.push(
                 <Card style={{ width: '30%', padding: '1rem', margin: '1rem'}} >
                     <Card.Img variant="top" src="https://via.placeholder.com/286px180" />
-                    <Card.Body>
+                    <Card.Body  onClick={() => setModalShow(true)}>
                         <Card.Title>Card Title {i}</Card.Title>
                         <Card.Text>
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
                         </Card.Text>
-                        <Button variant="primary" onClick={() => setModalShow(true)}>Go somewhere</Button>
-
-                        <MyModal
-                            show={modalShow}
-                            onHide={() => setModalShow(false)}
-                        />
+                        <Button variant="primary" onClick={console.log({i})}>Add to shopping cart</Button>
                     </Card.Body>
+                    <MyModal
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                    />
                     <br/>
                 </Card>
         );
